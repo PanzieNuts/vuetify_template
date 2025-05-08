@@ -1,13 +1,13 @@
 <template>
-    <v-container>
         <h1>Home</h1>
         <p>Welcome to the home page!</p>
-    </v-container>
+        <p>{{ name }}</p>
 </template>
 
 <script setup>
+import { ref } from 'vue'
 
-
+const name = ref('test')
 </script>
 
 <style scoped>
