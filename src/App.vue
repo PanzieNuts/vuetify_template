@@ -9,14 +9,17 @@ import { ref } from 'vue'
 </script>
 
 <style>
-/* Hide scrollbar globally */
 html, body {
-  scrollbar-width: none; /* Firefox */
-  -ms-overflow-style: none;  /* IE 10+ */
+  overflow-y: auto;           
+  scrollbar-gutter: stable;
 }
 
-html::-webkit-scrollbar,
 body::-webkit-scrollbar {
-  display: none; /* Chrome, Safari, Edge */
+  width: 8px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: rgba(0,0,0,0.2);
+  border-radius: 4px;
 }
 </style>
